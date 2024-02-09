@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Dear Fatima.</strong>
+                        <p>
+                            بالنسبة لعيد الحب🙂،كل عام و انت قلبي و بنتي و حياتي و عمري❤️،كل عام و انت روحي و عشقي و غرامي❤️،كل عام و انت تاج راسي و نور عيوني و ملكتي❤️،كل عام و انت معي و جنبي❤️🥺،كل عام و انت سندي و سكوني❤️💋،كل عام و انت خطيبتي و مرتي و حبيبت كل عام و انت ( الي) ❤️‍🩹
+  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
